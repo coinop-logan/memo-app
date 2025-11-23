@@ -1,0 +1,12 @@
+[application]
+name = "memo-app"
+default_platform = "android"
+
+[android]
+app_name = "Memo App"
+package_name = "com.memoapp.app"
+min_sdk_version = 24
+target_sdk_version = 34
+
+[application.android]
+icon = "assets/icon.png"
