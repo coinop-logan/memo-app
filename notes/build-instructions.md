@@ -92,23 +92,10 @@ lib/arm64-v8a/libdioxusmain.so
 - ✅ GitHub release creation workflow
 - ✅ Development loop validated (code → build → release → download → test)
 
-### Not Working / Not Tested
-- ❌ GitHub Actions builds (workflow exists but needs `--target` flag added)
-- ❌ Multi-architecture universal APKs
-- ❌ Release builds (currently using debug builds)
+### Not Implemented
+- Multi-architecture universal APKs
+- Release builds (currently using debug builds)
 
-## GitHub Actions Fix (TODO)
+## Notes
 
-The GitHub Actions workflow at `.github/workflows/build-android.yml` needs to be updated.
-
-Change line 43 from:
-```yaml
-run: dx build --platform android --release
-```
-
-To:
-```yaml
-run: dx build --platform android --target aarch64-linux-android --release
-```
-
-This will make CI builds compatible with the target device.
+**GitHub Actions**: We are NOT using GitHub Actions for builds. All builds are done locally on the desktop machine using the scripts provided (`build-arm64.sh` and `release.sh`). The `.github/workflows/build-android.yml` file exists but is not being used.
