@@ -7,6 +7,7 @@ app_name = "Memo App"
 package_name = "com.memoapp.app"
 min_sdk_version = 24
 target_sdk_version = 34
+architectures = ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"]
 
 [application.android]
 icon = "assets/icon.png"
