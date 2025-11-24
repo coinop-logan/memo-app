@@ -98,4 +98,4 @@ lib/arm64-v8a/libdioxusmain.so
 
 ## Notes
 
-**GitHub Actions**: We are NOT using GitHub Actions for builds. All builds are done locally on the desktop machine using the scripts provided (`build-arm64.sh` and `release.sh`). The `.github/workflows/build-android.yml` file exists but is not being used.
+**GitHub Actions**: We are NOT using GitHub Actions for builds. All builds are done locally on the desktop machine using the scripts provided (`build-arm64.sh` and `release.sh`).
